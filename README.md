@@ -36,6 +36,15 @@ This project is a Node.js CRUD (Create, Read, Update, Delete) API built using th
 - DELETE /items/:id: Delete an item by its ID.
 - For detailed usage examples and query parameters, refer to the API documentation.
 
+## Data Schema
+The API uses the following data schema for items:
+
+- itemId (string): Unique identifier for each item.
+- itemName (string): Name of the item.
+- itemPrice (number): Price of the item.
+- createdAt (string): Timestamp of when the item was created.
+- itemCategory (string): Category of the item.
+
 ## Error Handling
 - The API includes error handling using try-catch blocks to provide informative error responses.
 

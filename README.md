@@ -51,6 +51,7 @@ To install the project, follow these steps:
         npm install
 
 ### Running the Application
+
 To run the application locally, use the following command:
 
     ```bash
@@ -77,22 +78,22 @@ Example Request:
     ```json
 
         {
-        "itemName": "Example Item",
-        "itemPrice": 25.99,
-        "itemCategory": "Electronics"
+            "itemName": "Example Item",
+            "itemPrice": 25.99,
+            "itemCategory": "Electronics"
         }
 
 Example Response (201 Created):
 
-```json
+    ```json
 
-    {
-    "itemId": "unique-item-id",
-    "itemName": "Example Item",
-    "itemPrice": 25.99,
-    "createdAt": "2023-09-04T12:00:00.000Z",
-    "itemCategory": "Electronics"
-    }
+        {
+        "itemId": "unique-item-id",
+        "itemName": "Example Item",
+        "itemPrice": 25.99,
+        "createdAt": "2023-09-04T12:00:00.000Z",
+        "itemCategory": "Electronics"
+        }
 
 ### Get All Items
 
@@ -120,25 +121,25 @@ Retrieve all items in the "Electronics" category with prices between $20 and $50
 
 Example Response (200 OK):
 
-```json
+    ```json
 
-    {
-    "totalItems": 8,
-    "page": 1,
-    "pageSize": 10,
-    "items": [
         {
-            "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
-            "itemName": "Suger",
-            "itemPrice": 40,
-            "createdAt": "2023-09-04T19:46:12.664Z",
-            "itemCategory": "Grocery",
-            "itemDescription": "This item comes with seal package with 1KG quantity"
+        "totalItems": 8,
+        "page": 1,
+        "pageSize": 10,
+        "items": [
+            {
+                "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
+                "itemName": "Suger",
+                "itemPrice": 40,
+                "createdAt": "2023-09-04T19:46:12.664Z",
+                "itemCategory": "Grocery",
+                "itemDescription": "This item comes with seal package with 1KG quantity"
 
-        },
-        // More items...
-    ]
-    }
+            },
+            // More items...
+        ]
+        }
 
 ### Get an Item by ID
 
@@ -156,16 +157,16 @@ Retrieve an item with ID "item-id-1":
 
 Example Response (200 OK):
 
-```json
+    ```json
 
-    {
-        "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
-        "itemName": "Suger",
-        "itemPrice": 40,
-        "createdAt": "2023-09-04T19:46:12.664Z",
-        "itemCategory": "Grocery",
-        "itemDescription": "This item comes with seal package with 1KG quantity"
-    }
+        {
+            "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
+            "itemName": "Suger",
+            "itemPrice": 40,
+            "createdAt": "2023-09-04T19:46:12.664Z",
+            "itemCategory": "Grocery",
+            "itemDescription": "This item comes with seal package with 1KG quantity"
+        }
 
 ### Update an Item by ID
 
@@ -179,24 +180,24 @@ Example Request:
 
 Update the price of an item with ID "a22313d7-fc34-42d1-a90f-11362c6c8be4":
 
-```json
+    ```json
 
-    {
-        "itemPrice": 59.99
-    }
+        {
+            "itemPrice": 59.99
+        }
 
 Example Response (200 OK):
 
-```json
+    ```json
 
-    {
-        "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
-        "itemName": "Suger",
-        "itemPrice": 59.99,
-        "createdAt": "2023-09-04T19:46:12.664Z",
-        "itemCategory": "Grocery",
-        "itemDescription": "This item comes with seal package with 1KG quantity"
-    }
+        {
+            "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
+            "itemName": "Suger",
+            "itemPrice": 59.99,
+            "createdAt": "2023-09-04T19:46:12.664Z",
+            "itemCategory": "Grocery",
+            "itemDescription": "This item comes with seal package with 1KG quantity"
+        }
 
 ### Delete an Item by ID
 
@@ -208,12 +209,13 @@ Example Request:
 
 Delete an item with ID "item-id-1":
 bash
-Copy code
-DELETE /items/item-id-1
+
+DELETE /item/delete/a22313d7-fc34-42d1-a90f-11362c6c8be4
 Example Response (200 OK):
 
 
 ## Error Handling
+
 In case of errors, the API will return appropriate HTTP status codes and JSON responses with error messages:
 
 400 Bad Request: The request is malformed or missing required fields.

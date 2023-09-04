@@ -38,7 +38,7 @@ To install the project, follow these steps:
 1. Clone the repository (if you haven't already):
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+        git clone https://github.com/your-username/your-project.git
 
 2. Navigate to the project directory:
 
@@ -76,7 +76,6 @@ itemDescription (string): Description of the item.
 Example Request:
 
     ```json
-
         {
             "itemName": "Example Item",
             "itemPrice": 25.99,
@@ -86,7 +85,6 @@ Example Request:
 Example Response (201 Created):
 
     ```json
-
         {
         "itemId": "unique-item-id",
         "itemName": "Example Item",
@@ -116,13 +114,11 @@ pageSize (number): Number of items per page (default is 10).
 Retrieve all items in the "Electronics" category with prices between $20 and $50, sorted by price high to low, on page 2 with 10 items per page:
 
     ```bash
-
         GET /item/fetch?itemCategory=Grocery&minPrice=20&maxPrice=50&sort=highToLow&page=2&pageSize=10
 
 Example Response (200 OK):
 
     ```json
-
         {
         "totalItems": 8,
         "page": 1,
@@ -152,13 +148,11 @@ Example Response (200 OK):
 Retrieve an item with ID "item-id-1":
 
     ```bash
-
         GET /items/a22313d7-fc34-42d1-a90f-11362c6c8be4
 
 Example Response (200 OK):
 
     ```json
-
         {
             "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
             "itemName": "Suger",
@@ -181,7 +175,6 @@ Example Request:
 Update the price of an item with ID "a22313d7-fc34-42d1-a90f-11362c6c8be4":
 
     ```json
-
         {
             "itemPrice": 59.99
         }
@@ -189,7 +182,6 @@ Update the price of an item with ID "a22313d7-fc34-42d1-a90f-11362c6c8be4":
 Example Response (200 OK):
 
     ```json
-
         {
             "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
             "itemName": "Suger",

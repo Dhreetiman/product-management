@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "itemName": "Item 1",
+      "itemPrice": 100,
+      "createdAt": "12/04/2016",
+      "itemCategory": "Category1",
+      "itemId": "124",
+      "itemDescription": "Description1"
+    },
+    {
+      "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
+      "itemName": "Suger",
+      "itemPrice": 40,
+      "createdAt": "2023-09-04T19:46:12.664Z",
+      "itemCategory": "Grocery",
+      "itemDescription": "This item comes with seal package with 1KG quantity"
+    },
+    {
+      "itemId": "c621a6d5-f065-4f0e-b9bd-c04687bdda0d",
+      "itemName": "Toned Milk",
+      "itemPrice": 64,
+      "createdAt": "2023-09-04T19:49:53.414Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 1L"
+    },
+    {
+      "itemId": "474599ee-0b6a-416a-8c0c-6196deb0f9bd",
+      "itemName": "Eggs",
+      "itemPrice": 300,
+      "createdAt": "2023-09-04T19:51:12.637Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 30 Eggs"
+    },
+    {
+      "itemId": "b807bb31-f399-46ad-8518-7dabb32873e0",
+      "itemName": "Yogurt",
+      "itemPrice": 75,
+      "createdAt": "2023-09-04T19:53:00.211Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 200G Yogurt"
+    },
+    {
+      "itemId": "c060be26-4496-4edd-ae51-c8356b5f3b9c",
+      "itemName": "Paneer",
+      "itemPrice": 360,
+      "createdAt": "2023-09-04T19:53:44.537Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 1KG Paneer"
+    },
+    {
+      "itemId": "fb75d947-5e63-4925-b55e-7408e9f0b8f0",
+      "itemName": "Butter",
+      "itemPrice": 270,
+      "createdAt": "2023-09-04T19:54:27.264Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 500G Butter"
+    },
+    {
+      "itemId": "682f4653-0c2b-45cc-972f-879062f3bebd",
+      "itemName": "Cheese Slice",
+      "itemPrice": 130,
+      "createdAt": "2023-09-04T19:55:46.279Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 10 Cheese slice"
+    },
+    {
+      "itemId": "88e796aa-ecd1-4834-8a43-7b99ad9ccafe",
+      "itemName": "Fresh Cream",
+      "itemPrice": 70,
+      "createdAt": "2023-09-04T19:56:51.988Z",
+      "itemCategory": "Dairy",
+      "itemDescription": "Pack of 250ML Fresh Cream"
+    },
+    {
+      "itemId": "20ad3293-fb1e-4aaf-a936-ff7636e6f523",
+      "itemName": "Chakki Aata",
+      "itemPrice": 400,
+      "createdAt": "2023-09-04T19:58:27.361Z",
+      "itemCategory": "Grocery",
+      "itemDescription": "Pack of 5KG Fresh Fresh Chakki Aata"
+    },
+    {
+      "itemId": "b1b45947-c617-4545-a6e5-321d2f0b365f",
+      "itemName": "Organic Urad Dal",
+      "itemPrice": 202,
+      "createdAt": "2023-09-04T19:59:28.776Z",
+      "itemCategory": "Grocery",
+      "itemDescription": "Pack of 1KG Organic Urad Dal"
+    },
+    {
+      "itemId": "f55797ba-765c-43d5-be25-a9b4e6ce0b91",
+      "itemName": "Samsung Galaxy S21 Ultra",
+      "itemPrice": "120000",
+      "createdAt": "2023-09-04T20:00:49.031Z",
+      "itemCategory": "Electoronics",
+      "itemDescription": "Pack of 1KG Organic Urad Dal"
+    },
+    {
+      "itemId": "f7ad4a66-e7ca-431f-aa6e-a4dcd3813dc7",
+      "itemName": "Samsung Galaxy S21 Ultra",
+      "itemPrice": 120000,
+      "createdAt": "2023-09-04T20:02:01.963Z",
+      "itemCategory": "Electoronics",
+      "itemDescription": "Pack of 1KG Organic Urad Dal"
+    }
+  ]
+}

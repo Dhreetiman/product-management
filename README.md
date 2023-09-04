@@ -44,6 +44,7 @@ The API uses the following data schema for items:
 - itemPrice (number): Price of the item.
 - createdAt (string): Timestamp of when the item was created.
 - itemCategory (string): Category of the item.
+- itemDescription (string): Description of the item.
 
 ## Error Handling
 - The API includes error handling using try-catch blocks to provide informative error responses.

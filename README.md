@@ -44,5 +44,5 @@ This project is a Node.js CRUD (Create, Read, Update, Delete) API built using th
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
-   cd your-project
+   git clone https://github.com/Dhreetiman/product-management.git/
+   cd product-management

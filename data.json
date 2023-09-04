@@ -89,20 +89,20 @@
       "itemDescription": "Pack of 1KG Organic Urad Dal"
     },
     {
-      "itemId": "f55797ba-765c-43d5-be25-a9b4e6ce0b91",
-      "itemName": "Samsung Galaxy S21 Ultra",
-      "itemPrice": "120000",
-      "createdAt": "2023-09-04T20:00:49.031Z",
-      "itemCategory": "Electoronics",
-      "itemDescription": "Pack of 1KG Organic Urad Dal"
-    },
-    {
       "itemId": "f7ad4a66-e7ca-431f-aa6e-a4dcd3813dc7",
-      "itemName": "Samsung Galaxy S21 Ultra",
-      "itemPrice": 120000,
+      "itemName": "Updated",
+      "itemPrice": 10,
       "createdAt": "2023-09-04T20:02:01.963Z",
       "itemCategory": "Electoronics",
-      "itemDescription": "Pack of 1KG Organic Urad Dal"
+      "itemDescription": "Pack of Nothing"
+    },
+    {
+      "itemId": "b586f92c-93f8-4c2b-b3a5-699a63a3f3e1",
+      "itemName": "Test Item",
+      "itemPrice": 29.99,
+      "createdAt": "2023-09-04T20:55:22.481Z",
+      "itemCategory": "Test Category",
+      "itemDescription": "Test Description"
     }
   ]
 }

@@ -29,11 +29,11 @@ This project is a Node.js CRUD (Create, Read, Update, Delete) API built using th
 
 ## API Routes
 
-- POST /items: Create a new item.
-- GET /items: Retrieve a list of items with optional filtering, sorting, and pagination.
-- GET /items/:id: Retrieve an item by its ID.
-- PUT /items/:id: Update an item by its ID.
-- DELETE /items/:id: Delete an item by its ID.
+- POST /item/add: Create a new item.
+- GET /item/fetch: Retrieve a list of items with optional filtering, sorting, and pagination.
+- GET /item/fetch/:id: Retrieve an item by its ID.
+- PUT /item/update/:id: Update an item by its ID.
+- DELETE /item/delete/:id: Delete an item by its ID.
 - For detailed usage examples and query parameters, refer to the API documentation.
 
 ## Data Schema

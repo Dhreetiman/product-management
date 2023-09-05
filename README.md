@@ -54,8 +54,8 @@ To install the project, follow these steps:
 
 To run the application locally, use the following command:
 
-    ```bash
-        npm run start
+     ```bash
+          npm run start
 
 The application will start and be accessible at http://localhost:8080 by default.
 
@@ -75,16 +75,17 @@ itemCategory (string): Category of the item.
 itemDescription (string): Description of the item.
 Example Request:
 
-    ```json
+```json
         {
             "itemName": "Example Item",
             "itemPrice": 25.99,
             "itemCategory": "Electronics"
         }
+```
 
 Example Response (201 Created):
 
-    ```json
+```json
         {
         "itemId": "unique-item-id",
         "itemName": "Example Item",
@@ -92,6 +93,7 @@ Example Response (201 Created):
         "createdAt": "2023-09-04T12:00:00.000Z",
         "itemCategory": "Electronics"
         }
+```
 
 ### Get All Items
 
@@ -113,12 +115,13 @@ pageSize (number): Number of items per page (default is 10).
 
 Retrieve all items in the "Electronics" category with prices between $20 and $50, sorted by price high to low, on page 2 with 10 items per page:
 
-    ```bash
+```bash
         GET /item/fetch?itemCategory=Grocery&minPrice=20&maxPrice=50&sort=highToLow&page=2&pageSize=10
+```
 
 Example Response (200 OK):
 
-    ```json
+```json
         {
         "totalItems": 8,
         "page": 1,
@@ -136,6 +139,8 @@ Example Response (200 OK):
             // More items...
         ]
         }
+```
+        
 
 ### Get an Item by ID
 
@@ -147,12 +152,13 @@ Example Response (200 OK):
 
 Retrieve an item with ID "item-id-1":
 
-    ```bash
+```bash
         GET /items/a22313d7-fc34-42d1-a90f-11362c6c8be4
+```
 
 Example Response (200 OK):
 
-    ```json
+```json
         {
             "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
             "itemName": "Suger",
@@ -161,6 +167,7 @@ Example Response (200 OK):
             "itemCategory": "Grocery",
             "itemDescription": "This item comes with seal package with 1KG quantity"
         }
+```
 
 ### Update an Item by ID
 
@@ -174,14 +181,15 @@ Example Request:
 
 Update the price of an item with ID "a22313d7-fc34-42d1-a90f-11362c6c8be4":
 
-    ```json
+```json
         {
             "itemPrice": 59.99
         }
+```
 
 Example Response (200 OK):
 
-    ```json
+```json
         {
             "itemId": "a22313d7-fc34-42d1-a90f-11362c6c8be4",
             "itemName": "Suger",
@@ -190,6 +198,7 @@ Example Response (200 OK):
             "itemCategory": "Grocery",
             "itemDescription": "This item comes with seal package with 1KG quantity"
         }
+```
 
 ### Delete an Item by ID
 
@@ -200,9 +209,9 @@ Example Response (200 OK):
 Example Request:
 
 Delete an item with ID "item-id-1":
-bash
-
-DELETE /item/delete/a22313d7-fc34-42d1-a90f-11362c6c8be4
+```bash
+    DELETE /item/delete/a22313d7-fc34-42d1-a90f-11362c6c8be4
+```
 Example Response (200 OK):
 
 
@@ -227,30 +236,34 @@ You can run tests for the API using the Mocha testing framework and Chai asserti
     ```bash
         npm run test
 
-- API Tests
+### API Tests:
 
-    POST /item/add
+- POST /item/add
 POST /item/add 201 12.561 ms - 257
-      ✔ should add a new item (103ms)
-    GET /item/fetch/:id
+✔ should add a new item (103ms)
+
+- GET /item/fetch/:id
 GET /item/fetch/21ef4399-7d7e-4e4c-919a-a5f76c24f71a 200 4.471 ms - 261
-      ✔ should retrieve an item by ID
+✔ should retrieve an item by ID
 GET /item/fetch/invalid_id 404 1.128 ms - 54
-      ✔ should return a 404 status if item ID is not found
-    PUT /item/update/:id
+✔ should return a 404 status if item ID is not found
+
+- PUT /item/update/:id
 PUT /item/update/21ef4399-7d7e-4e4c-919a-a5f76c24f71a 200 3.541 ms - 273
-      ✔ should update an item by ID
+✔ should update an item by ID
 PUT /item/update/invalid_id 404 2.125 ms - 54
-      ✔ should return a 404 status if item ID is not found
-    GET /item/fetch
+✔ should return a 404 status if item ID is not found
+
+- GET /item/fetch
 GET /item/fetch?minPrice=15 200 1.425 ms - 2006
-      ✔ should filter items by minimum price
+✔ should filter items by minimum price
 GET /item/fetch?sort=highToLow 200 0.929 ms - 1995
-      ✔ should sort items by price (high to low)
+✔ should sort items by price (high to low)
 GET /item/fetch?page=2&pageSize=5 200 0.889 ms - 1096
-      ✔ should paginate items
-    DELETE /item/delete/:id
+✔ should paginate items
+
+- DELETE /item/delete/:id
 DELETE /item/delete/21ef4399-7d7e-4e4c-919a-a5f76c24f71a 200 3.453 ms - 64
-      ✔ should delete an item by ID
+✔ should delete an item by ID
 DELETE /item/delete/invalid_id 404 3.899 ms - 54
-      ✔ should return a 404 status if item ID is not found
+✔ should return a 404 status if item ID is not found
